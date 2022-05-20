@@ -24,6 +24,7 @@ contract Amm is IAmm, PerpFiOwnableUpgrade, BlockContext {
     // because position decimal rounding error,
     // if the position size is less than IGNORABLE_DIGIT_FOR_SHUTDOWN, it's equal size is 0
     uint256 private constant IGNORABLE_DIGIT_FOR_SHUTDOWN = 100;
+    //uint private constant xyz;
 
     // a margin to prevent from rounding when calc liquidity multiplier limit
     uint256 private constant MARGIN_FOR_LIQUIDITY_MIGRATION_ROUNDING = 1e9;
